@@ -22,8 +22,23 @@
 \usepackage{pdfsync}
 
 %% QR code
-\usepackage{auto-pst-pdf}
-\usepackage{pst-barcode}
+%% \usepackage{auto-pst-pdf}
+%% \usepackage{pst-barcode}
+
+\usepackage{multimedia}
+
+\AtBeginSection[]
+{
+\begin{frame}<beamer>{Table of Contents}
+\tableofcontents[
+    %% currentsection,
+    currentsubsection, 
+    hideothersubsections, 
+    sectionstyle=show/hide, 
+    sectionstyle=show/shaded,
+]
+\end{frame}
+}
 \end_preamble
 \use_default_options true
 \maintain_unincluded_children false
@@ -42,7 +57,7 @@
 \font_tt_scale 100
 
 \graphics default
-\default_output_format pdf-shell-escape
+\default_output_format pdf2
 \output_sync 0
 \bibtex_command default
 \index_command default
@@ -99,7 +114,7 @@ Bringing Science to Management: using Simulation- and Scenario-Based Approaches
 
 one tool which can do both
 \begin_inset Argument
-status open
+status collapsed
 
 \begin_layout Plain Layout
 Decision Making using Simulations & Scenarios 
@@ -200,7 +215,7 @@ Centre for Invasion Biology, Stellenbosch University, South Africa
 status open
 
 \begin_layout Plain Layout
-INTECOL 2013, London
+English and Ecology, 2013
 \end_layout
 
 \end_inset
@@ -335,16 +350,23 @@ In this talk, I will give an overview over the model developed for the Fynbos
 \end_layout
 
 \begin_layout Section
-Framework for the Drakensberg
+The Drakensberg
 \end_layout
 
-\begin_layout EndFrame
-
+\begin_layout Subsection
+Where is it 
 \end_layout
 
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lyxframeend{}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -410,12 +432,359 @@ Drakensberg
 © Joanna Sikora, http://www.ashka.eu/rpa/day14/page.html
 \end_layout
 
-\begin_layout Itemize
-Some Pictures
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lyxframeend{}
 \end_layout
 
-\begin_layout Itemize
-Map
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Map_SA.jpg
+	lyxscale 20
+	height 100pheight%
+	groupId Maps
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Map SA
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lyxframeend{}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Map_Drakensberg.jpg
+	lyxscale 20
+	height 100pheight%
+	groupId Maps
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Topography
+\end_layout
+
+\begin_layout BeginPlainFrame
+Map Drakensberg
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lyxframeend{}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename DEM.pdf
+	lyxscale 20
+	height 100pheight%
+	groupId Maps
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Altitude
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lyxframeend{}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename pa_climate_116328.png
+	lyxscale 20
+	width 100page%
+	height 100pheight%
+	keepAspectRatio
+	BoundingBox 0bp 0bp 600bp 350bp
+	clip
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Climate
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 6cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+©
+\lang british
+ http://bioval.jrc.ec.europa.eu/APAAT/pa/116328/
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lyxframeend{}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename bramble2.png
+	lyxscale 20
+	width 100page%
+	height 100pheight%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Drakensberg
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename gory_smocze_giants_mountain_drakensberg.jpg
+	lyxscale 20
+	width 100text%
+	height 95theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size tiny
+\color white
+© Joanna Sikora, http://www.ashka.eu/rpa/day14/page.html
+\end_layout
+
+\begin_layout BeginPlainFrame
+Drakensberg
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+movie[width=11cm,height=8cm,poster]{}{UNESCO_movie.avi}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+One Problem
 \end_layout
 
 \begin_layout BeginPlainFrame
@@ -482,13 +851,16 @@ http://hcvv.blogspot.fr/2012/06/they-call-it-gods-window.html
 http://www.drak.co.za/news1202.html
 \end_layout
 
-\begin_layout EndFrame
-
-\end_layout
-
 \begin_layout Standard
 \begin_inset ERT
 status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lyxframeend{}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -542,9 +914,17 @@ status collapsed
 
 \end_layout
 
+\begin_layout Section
+IAP Management in the Drakensberg
+\end_layout
+
+\begin_layout Subsection
+Background
+\end_layout
+
 \begin_layout BeginFrame
 \begin_inset ERT
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -553,7 +933,7 @@ status open
 
 \end_inset
 
-IAP Management
+How it is
 \end_layout
 
 \begin_layout Standard
@@ -669,20 +1049,8 @@ use
  of funding for IAP control
 \end_layout
 
-\begin_layout Standard
-\begin_inset Flex PresentationMode
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout BeginPlainFrame
+How it is envisaged
 \end_layout
 
 \begin_layout Standard
@@ -700,15 +1068,46 @@ status collapsed
 
 \end_layout
 
-\begin_layout Standard
-\begin_inset Flex PresentationMode
+\begin_layout Subsection
+Some considerations and Solution
+\end_layout
+
+\begin_layout BeginFrame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+<1>[label=overview]
+\end_layout
+
+\end_inset
+
+What needs to be done
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{The Software Tools}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+using 
+\begin_inset Flex Alert
 status collapsed
 
 \begin_layout Plain Layout
-\begin_inset Newpage pagebreak
-\end_inset
-
-
+only Open Source software
 \end_layout
 
 \end_inset
@@ -716,6 +1115,30 @@ status collapsed
 
 \end_layout
 
+\begin_layout Enumerate
+Open Source the resulting model
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{The Model}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Enumerate
 develop spread model for 
 \begin_inset Flex Alert
@@ -788,10 +1211,27 @@ link
  it to other ecosystem service models
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset VSpace bigskip
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Block
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{The User Interface}
+\end_layout
+
 \end_inset
 
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
 provide 
 \begin_inset Flex Alert
 status collapsed
@@ -802,7 +1242,7 @@ simple
 
 \end_inset
 
- (web?) interface to
+ interface to
 \end_layout
 
 \begin_deeper
@@ -815,46 +1255,48 @@ evaluate management scenarios
 \end_layout
 
 \end_deeper
-\begin_layout Enumerate
-\begin_inset VSpace bigskip
-\end_inset
+\end_deeper
+\begin_layout BeginFrame
+Why Open Source
+\end_layout
 
-using 
-\begin_inset Flex Alert
-status collapsed
+\begin_layout Block
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-only Open Source software
+
+{Using Open Source Software}
 \end_layout
 
 \end_inset
 
 
-\begin_inset Newline newline
+\end_layout
+
+\begin_layout Separator
+\begin_inset VSpace vfill
 \end_inset
 
-(R, GRASS, \SpecialChar \ldots{}
-)
+
 \end_layout
 
-\begin_layout Enumerate
-Open Source the resulting model
-\end_layout
-
-\begin_layout Standard
-\begin_inset Flex PresentationMode
-status collapsed
+\begin_layout Block
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
-\begin_inset Newpage pagebreak
-\end_inset
 
-
+{Licensing Model under Open Source License}
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout AgainFrame
+<2>overview
 \end_layout
 
 \begin_layout BeginPlainFrame
@@ -1832,7 +2274,124 @@ eativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.h
 © http://webapp1.wright.edu/housing/addresses.php, edited by myself
 \end_layout
 
-\begin_layout EndFrame
+\begin_layout AgainFrame
+<3>overview
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename waiting_1.jpg
+	lyxscale 20
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://www.apuregeneration.com/blog/what-are-we-waiting-for/3763
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename waiting_2.jpg
+	lyxscale 20
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://www.imgion.com/img/waiting-for-you/
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename waiting_3.jpg
+	lyxscale 20
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://www.polarismr.com/customer-retention-research/blogs/
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+lyxframeend{}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename presentation-cloud-computing_bkg.png
+	lyxscale 30
+	width 100page%
+	height 100pheight%
+
+\end_inset
+
 
 \end_layout
 
@@ -1850,17 +2409,125 @@ status collapsed
 
 \end_layout
 
-\begin_layout Section
-Optimising in Fynbos
-\end_layout
-
-\begin_layout EndFrame
+\begin_layout BeginPlainFrame
 
 \end_layout
 
 \begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename presentation-cloud-computing_2.png
+	width 100text%
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size tiny
+© http://www.itresearch.fr/industrialisation-informatique/ edited by myself
+\end_layout
+
+\begin_layout BeginFrame
 \begin_inset ERT
 status collapsed
+
+\begin_layout Plain Layout
+
+[plain,allowframebreaks]
+\end_layout
+
+\end_inset
+
+User Interface
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename gruber.jpg
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size tiny
+© http://uxmag.com/articles/the-dirtiest-word-in-ux-complexity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename blender.jpg
+	scale 65
+	BoundingBox 0bp 0bp 232bp 259bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://uxmag.com/articles/the-dirtiest-word-in-ux-complexity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename blender.jpg
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://uxmag.com/articles/the-dirtiest-word-in-ux-complexity
+\end_layout
+
+\begin_layout Section
+Previous Results
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lyxframeend{}
+\end_layout
 
 \begin_layout Plain Layout
 
@@ -2439,168 +3106,8 @@ status collapsed
 
 \end_layout
 
-\begin_layout Section
-How to make it accessible
-\end_layout
-
-\begin_layout EndFrame
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{ 
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-usebackgroundtemplate{
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename presentation-cloud-computing_bkg.png
-	lyxscale 30
-	width 100page%
-	height 100pheight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout BeginPlainFrame
-
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename presentation-cloud-computing_2.png
-	width 100text%
-	height 100theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size tiny
-© http://www.itresearch.fr/industrialisation-informatique/ edited by myself
-\end_layout
-
 \begin_layout BeginFrame
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-[plain,allowframebreaks]
-\end_layout
-
-\end_inset
-
-User Interface
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Graphics
-	filename gruber.jpg
-	width 100text%
-	height 100theight%
-	keepAspectRatio
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\align center
-
-\size tiny
-© http://uxmag.com/articles/the-dirtiest-word-in-ux-complexity
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename blender.jpg
-	scale 65
-	BoundingBox 0bp 0bp 232bp 259bp
-	clip
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size tiny
-© http://uxmag.com/articles/the-dirtiest-word-in-ux-complexity
-\end_layout
-
-\begin_layout Standard
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Graphics
-	filename blender.jpg
-	scale 65
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\size tiny
-© http://uxmag.com/articles/the-dirtiest-word-in-ux-complexity
-\end_layout
-
-\begin_layout BeginFrame
-Where we are
+Summary TODO
 \end_layout
 
 \begin_layout Enumerate
@@ -2753,63 +3260,6 @@ status open
 \end_inset
 
 
-\end_layout
-
-\begin_layout EndFrame
-
-\end_layout
-
-\begin_layout BeginFrame
-Contact info
-\end_layout
-
-\begin_layout Standard
-\align center
-\begin_inset Preview
-
-\begin_layout Standard
-
-\lang british
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-begin{pspicture}(4cm,4cm)
-\end_layout
-
-\begin_layout Plain Layout
-
- 
-\backslash
-psbarcode{MECARD:N:Krug,Rainer M;TEL:+33685625998;EMAIL:Rainer@krugs.de;URL:http:
-//github.com/rkrug/INTECOL_2013_Optimizing;NOTE:Bringing Science to Management
- --- using simulation- and scenario-based approaches to guide decision making
- in invasive species management.
- ;}{}{qrcode}
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-end{pspicture}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-Rainer@krugs.de, http://github.com/rkrug/INTECOL_2013_Optimizing
 \end_layout
 
 \begin_layout EndFrame
