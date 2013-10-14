@@ -1,0 +1,36 @@
+@startuml
+skin BlueModern
+
+participant Funder
+actor Management
+participant IAP
+participant Model 
+
+== Funding Phase ==
+
+Model <- Management : Provides possible funding scenarios
+activate Model
+Model -> Management: Provides Spread scenarios
+deactivate Model
+' activate Management
+Management -> Funder: Motivates for funding
+' deactivate Management
+activate Funder
+Funder -> Management: Provides funding
+deactivate Funder
+
+== Management Phase ==
+
+Management  -> Model: Provides funding and management scenarios
+activate Model
+Management  <- Model: Provides optimal management scenario
+deactivate Model
+' activate Management
+Management -> IAP: Controls IAP spread
+' deactivate Management
+activate IAP
+Management  <- IAP: Monitors impact
+deactivate IAP
+
+
+@enduml

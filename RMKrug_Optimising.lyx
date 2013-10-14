@@ -1,0 +1,2820 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\usetheme{Warsaw}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\tikzstyle{block} = [rectangle, draw, fill=blue!20, text width=5.5em, text centered, rounded corners, minimum height=4em, node distance=2cm]
+\tikzstyle{subblock} = [rectangle, draw, fill=green!20, text width=5.1em, text centered, rounded corners=12pt, minimum height=5em, node distance=2cm]
+\tikzstyle{exp} = [ellipse, draw, fill=green!20, text width=8em, text centered, rounded corners, minimum height=4.5em, node distance=3cm]
+\tikzstyle{beginend} = [draw, ellipse, fill=red!20, node distance=3cm, text centered, text width=3.8em, minimum height=4.5em, minimum width=4.8em, node distance=3cm]
+\tikzstyle{line} = [draw, very thick, color=black!50, -latex']
+
+\tikzstyle{block} = [rectangle, draw, text width=5.5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{beginend} = [draw, ellipse, node distance=3cm, text centered, text width=3.8em, minimum height=4.5em, minimum width=4.8em]
+\tikzstyle{line} = [draw, very thick, color=black!50, -latex']
+
+%% Preview sync
+\usepackage{pdfsync}
+
+%% QR code
+\usepackage{auto-pst-pdf}
+\usepackage{pst-barcode}
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format pdf-shell-escape
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\branch Archive
+\selected 0
+\filename_suffix 0
+\color #faf0e6
+\end_branch
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Bringing Science to Management: using Simulation- and Scenario-Based Approaches
+ to Guide Decision Making in Invasive Species Management
+\begin_inset Newline newline
+\end_inset
+
+---
+\begin_inset Newline newline
+\end_inset
+
+one tool which can do both
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Decision Making using Simulations & Scenarios 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+insertframenumber/
+\backslash
+inserttotalframenumber
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset space ~
+\end_inset
+
+(rev 
+\begin_inset Info
+type  "buffer"
+arg   "vcs-revision"
+\end_inset
+
+)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Rainer M.
+ Krug
+\begin_inset Flex InstituteMark
+status open
+
+\begin_layout Plain Layout
+1,2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Institute
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ESE, Université Paris Sud XI, Orsay, France
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+and
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex InstituteMark
+status collapsed
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+Centre for Invasion Biology, Stellenbosch University, South Africa
+\end_layout
+
+\begin_layout Date
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+INTECOL 2013, London
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Contents
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex ArticleMode
+status collapsed
+
+\begin_layout Section*
+Abstract
+\end_layout
+
+\begin_layout Plain Layout
+In science, simulation- and scenario-based approaches have been proven to
+ be useful in understanding complex systems and their reaction to changing
+ input parameters.
+ This has been demonstrated for example by climate change models and scenarios
+ which yield reproducible and transparent results.
+ The downside of this approach is the need for substantial computing power
+ and complexity of the tools used.
+\end_layout
+
+\begin_layout Plain Layout
+With the increasing availability of cloud computing, computing power can
+ be re-located from the desktop to “the cloud”, and thus be made available
+ for a wider audience.
+ By building a simple user interface, interacting with complex simulation
+ models in “the cloud”, simulation- and scenario-based approaches can be
+ put at the fingertips of managers and be used to obtain reproducible and
+ transparent results which may be used e.g.
+ in invasive species management.
+\end_layout
+
+\begin_layout Plain Layout
+An example where this approach has be been shown to be of high value is
+ at the interface of policy (funding priorities and levels), management
+ (what and how much to spend where) and science (complex simulation- and
+ scenario-based approach) by guiding the motivation for funding and the
+ allocation of funds to removal of invasives.
+\end_layout
+
+\begin_layout Plain Layout
+The simulation model predicts the impact of different funding levels to
+ 
+\series bold
+motivate
+\series default
+ for appropriate funding, and at the same time provides a tool to develop
+ and 
+\series bold
+optimise
+\series default
+ management approaches within a particular budget scenario.
+ These models can be designed so that they feed into other ecosystem service
+ models, therefore allowing to quantify the impact of species invasions
+ on different ecosystem services, dependent on budget scenarios and management
+ practices.
+\end_layout
+
+\begin_layout Plain Layout
+With this aim in mind, we developed a model for scientific purposes (
+\shape smallcaps
+SpreadSim
+\shape default
+), which was been built for selected nature reserves in the Fynbos biome
+ (South Africa) to simulate the spread of three different invasive alien
+ plant groups (acacias, pines and hakeas) to 
+\end_layout
+
+\begin_layout Enumerate
+predict the area under alien cover under different budget scenarios and
+\end_layout
+
+\begin_layout Enumerate
+to demonstrate the impact of different spatial prioritisation scenarios
+ on the area under alien cover.
+\end_layout
+
+\begin_layout Plain Layout
+The model incorporates spatial and non-spatial information, fire and invasive
+ plant spread simulation as well as costs of clearing and budgets.
+ It is a stochastic rule based simulation model build in R, using GRASS
+ for spatial data storage and processing as well as C++.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+Simulations were run over 30 years, during which one prioritisation strategy
+ was used, and the amount of area cleared per year was constrained by financial
+ resources.
+\end_layout
+
+\begin_layout Plain Layout
+To date, this model has not yet been translated into a version to be used
+ by e.g.
+ managers.
+ Efforts are now being made to adapt 
+\shape smallcaps
+SpreadSim
+\shape default
+ for use in the Drakensberg Nature Reserve (South Africa).
+ This includes porting the model into “the cloud” and developing a simple
+ friendly web interface so that managers can use the model to illustrate
+ the impact of different budget scenarios, and determine the best spatial
+ prioritisation strategy under a given budget.
+\end_layout
+
+\begin_layout Plain Layout
+In this talk, I will give an overview over the model developed for the Fynbos
+ and discuss its adaptation for the Drakensberg as well as deployment options.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Framework for the Drakensberg
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename bramble2.png
+	lyxscale 20
+	width 100page%
+	height 100pheight%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Drakensberg
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename gory_smocze_giants_mountain_drakensberg.jpg
+	lyxscale 20
+	width 100text%
+	height 95theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size tiny
+\color white
+© Joanna Sikora, http://www.ashka.eu/rpa/day14/page.html
+\end_layout
+
+\begin_layout Itemize
+Some Pictures
+\end_layout
+
+\begin_layout Itemize
+Map
+\end_layout
+
+\begin_layout BeginPlainFrame
+Invasive Alien Plants
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout ColumnsCenterAligned
+
+\end_layout
+
+\begin_deeper
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename pines.jpg
+	lyxscale 50
+	width 110text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsCenterAligned
+
+\size tiny
+\color white
+http://hcvv.blogspot.fr/2012/06/they-call-it-gods-window.html
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Column
+5cm
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Wattles.jpg
+	lyxscale 50
+	width 110text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout ColumnsCenterAligned
+
+\size tiny
+\color white
+http://www.drak.co.za/news1202.html
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename bramble2.bw.png
+	lyxscale 20
+	width 100page%
+	height 100pheight%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[plain,allowframebreaks]
+\end_layout
+
+\end_inset
+
+IAP Management
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Model.plantuml
+	lyxscale 20
+	width 100text%
+	height 95theight%
+	keepAspectRatio
+	groupId ConMod
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PresentationMode
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+need for
+\end_layout
+
+\begin_layout Itemize
+more 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+objective
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+more 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+transparent
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+easier to communicate
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+more efficient
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+approach to 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+motivate
+\end_layout
+
+\end_inset
+
+ for & 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+use
+\end_layout
+
+\end_inset
+
+ of funding for IAP control
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PresentationMode
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Model_2.plantuml
+	lyxscale 20
+	width 100text%
+	height 95theight%
+	keepAspectRatio
+	groupId ConMod
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PresentationMode
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+develop spread model for 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+bramble
+\end_layout
+
+\end_inset
+
+, 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+pinus
+\end_layout
+
+\end_inset
+
+ & 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+acacia
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+include IAP 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+management
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+fire
+\end_layout
+
+\end_inset
+
+ in spread model
+\end_layout
+
+\begin_layout Enumerate
+provide interface to 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+link
+\end_layout
+
+\end_inset
+
+ it to other ecosystem service models
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset VSpace bigskip
+\end_inset
+
+provide 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+simple
+\end_layout
+
+\end_inset
+
+ (web?) interface to
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+evaluate funding scenarios
+\end_layout
+
+\begin_layout Itemize
+evaluate management scenarios
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset VSpace bigskip
+\end_inset
+
+using 
+\begin_inset Flex Alert
+status collapsed
+
+\begin_layout Plain Layout
+only Open Source software
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+(R, GRASS, \SpecialChar \ldots{}
+)
+\end_layout
+
+\begin_layout Enumerate
+Open Source the resulting model
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex PresentationMode
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Overprint
+
+\lang british
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<1>
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename pheasant-on-grass-lawn-in-garden-in-Suffolk-England-2-DBW.jpg
+	lyxscale 30
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+	BoundingBox 0bp 0bp 1280bp 960bp
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Overprint
+
+\size tiny
+©
+\lang british
+ Dave B.
+ Wieseman
+\end_layout
+
+\begin_layout Overprint
+
+\lang british
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<2>
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename pheasant-on-grass-lawn-in-garden-in-Suffolk-England-2-DBW_2.jpg
+	lyxscale 30
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+	BoundingBox 0bp 0bp 1280bp 960bp
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Overprint
+
+\size tiny
+©
+\lang british
+ Dave B.
+ Wieseman, edited by myself
+\end_layout
+
+\begin_layout BeginPlainFrame
+Simulation
+\end_layout
+
+\begin_layout Standard
+\begin_inset space \hfill{}
+\end_inset
+
+
+\lang british
+
+\begin_inset Graphics
+	filename R_GRASS_2.plantuml
+	lyxscale 50
+	width 100text%
+	height 90theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\lang english
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+The model
+\end_layout
+
+\begin_layout Overprint
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<1>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.8, transform shape]
+\end_layout
+
+\begin_layout Plain Layout
+
+% Place nodes Overview
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [beginend] (beginOverview) {Begin Year};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, below of=beginOverview, node distance=2cm] (clear) {Clearing};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, right of=clear, node distance=4cm] (fire) {Fire};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, right of=fire, node distance=2.2cm] (seedprod) {Seed Production};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, right of=seedprod, node distance=2.2cm] (seeddisp) {Seed Dispersal};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, right of=seeddisp, node distance=2.2cm] (germest) {Germination
+ 
+\backslash
+& Establishment};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [beginend, above of=germest, node distance=2cm] (endOverview) {End
+ Year};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Draw conectors Overview
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (beginOverview) -- (clear);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (clear) -- (fire);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (fire) -- (seedprod);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (seedprod) -- (seeddisp);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (seeddisp) -- (germest);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (germest) -- (endOverview);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line, dashed] (endOverview) -- node {
+\backslash
+textcolor{black} {repeat 30 times}} (beginOverview);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Place nodes Clearing
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=clear, left=0.9cm, below=-1cm, opacity=0] (costs)
+ {Determine costs per cell};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=costs, node distance=1.7cm, opacity=0] (identify)
+ {Identify area to be cleared};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=clear, right=0.9cm, below=-1cm, opacity=0] (budget)
+ {Save remaining budget};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=budget, node distance=1.7cm, opacity=0] (clear)
+ {Clear IAPs};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Draw connectors Clearing
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line, opacity=0] (costs) -- (identify);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line, opacity=0] (identify) -- (clear);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line, opacity=0] (clear) -- (budget);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Place nodes Fire
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+node [subblock, below of=fire, left=0.9cm, below=-1cm] (fm) {Determine fuel
+ model};
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+node [subblock, below of=fm, node distance=1.7cm] (ros) {Determine ros};
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+node [subblock, below of=ros, node distance=1.7cm] (ignrisk) {Determine ignition
+ risk};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+node [subblock, below of=fire, right=0.9cm, below=-1cm] (burn) {Burn cells};
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+node [subblock, below of=burn, node distance=1.7cm] (area) {Identify cells
+ to be burned};
+\end_layout
+
+\begin_layout Plain Layout
+
+%   
+\backslash
+node [subblock, below of=area, node distance=1.7cm] (spread) {Calculate temporal
+ and spatial fire spread};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+node [subblock, below of=ignrisk, below=-0.3cm, right=0.1cm] (ign) {Determine
+ ignition points};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Draw connectors Fire
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+path [line] (fm) -- (ros);
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+path [line] (ros) -- (ignrisk);
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+path [line] (ignrisk) -- (ign);
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+path [line] (ign) -- (spread);
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+path [line] (spread) -- (area);
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+path [line] (area) -- (burn);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Overprint
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+onslide<2>
+\end_layout
+
+\end_inset
+
+
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+scriptsize
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{tikzpicture}[scale=0.8, transform shape]
+\end_layout
+
+\begin_layout Plain Layout
+
+% Place nodes Overview
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [beginend] (beginOverview) {Begin Year};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, below of=beginOverview, node distance=2cm] (clear) {Clearing};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, right of=clear, node distance=4cm] (fire) {Fire};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, right of=fire, node distance=2.2cm] (seedprod) {Seed Production};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, right of=seedprod, node distance=2.2cm] (seeddisp) {Seed Dispersal};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [block, right of=seeddisp, node distance=2.2cm] (germest) {Germination
+ 
+\backslash
+& Establishment};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [beginend, above of=germest, node distance=2cm] (endOverview) {End
+ Year};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Draw conectors Overview
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (beginOverview) -- (clear);
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+path [line] (clear) -- (fire);
+\end_layout
+
+\begin_layout Plain Layout
+
+%    
+\backslash
+path [line] (fire) -- (seedprod);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (seedprod) -- (seeddisp);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (seeddisp) -- (germest);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (germest) -- (endOverview);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line, dashed] (endOverview) -- node {
+\backslash
+textcolor{black} {repeat 30 times}} (beginOverview);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Place nodes Clearing
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=clear, left=0.9cm, below=-1cm] (costs) {Determine
+ costs per cell};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=costs, node distance=1.7cm] (identify) {Identify
+ area to be cleared};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=clear, right=0.9cm, below=-1cm] (budget) {Save remaining
+ budget};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=budget, node distance=1.7cm] (clearA) {Clear IAPs};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Draw connectors Clearing
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (clear) -- (costs);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (costs) -- (identify);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (identify) -- (clearA);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (clearA) -- (budget);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+path [line] (budget) -- (fire);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Place nodes Fire
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=fire, left=0.9cm, below=-1cm] (blockF) {Determine
+ area to burn};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=blockF, node distance=1.7cm] (costF) {Determine
+ costs};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=fire, right=0.9cm, below=-1cm] (budgetF) {Save remaining
+ budget};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+node [subblock, below of=budgetF, node distance=1.7cm] (burnF) {Burn blocks};
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\end_layout
+
+\begin_layout Plain Layout
+
+%     
+\backslash
+node [subblock, below of=ignrisk, below=-0.3cm, right=0.1cm] (ign) {Determine
+ ignition points};
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+% Draw connectors Fire
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (fire) -- (blockF);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (blockF) -- (costF);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (costF) -- (burnF);
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (burnF) -- (budgetF);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+    
+\backslash
+path [line] (budgetF) -- (seedprod);
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{tikzpicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename MaxCologne-Rohbau_September_2011-3057.jpg
+	lyxscale 10
+	width 100text%
+	height 95theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© Raimond Spekking / CC-BY-SA-3.0 (via Wikimedia Commons) [CC-BY-SA-3.0 (http://cr
+eativecommons.org/licenses/by-sa/3.0) or GFDL (http://www.gnu.org/copyleft/fdl.html)]
+, via Wikimedia Commons
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename warehouse.jpg
+	lyxscale 10
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://lerablog.org/business/management/ensure-the-safety-of-your-warehouse/
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename trucker2.jpg
+	lyxscale 10
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://www.schulen.regensburg.de/~tkoe2207/weihnachtsaktion.htm
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename packages-2_3.jpg
+	lyxscale 10
+	width 100line%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://webapp1.wright.edu/housing/addresses.php, edited by myself
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Optimising in Fynbos
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Invasions.res.jpg
+	lyxscale 10
+	width 100page%
+	height 100pheight%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Optimising in Fynbos
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Invasions.res.bw.png
+	lyxscale 10
+	width 100page%
+	height 100pheight%
+	keepAspectRatio
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+Different Funding Scenarios
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename cover_Krug2010.eps
+	scale 95
+	BoundingBox 0bp 0bp 259bp 216bp
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+Krug, R.
+ M., Roura-Pascual, N., & Richardson, D.
+ M.
+ (2010).
+ Clearing of invasive alien plants under different budget scenarios: using
+ a simulation model to test efficiency.
+ Biological Invasions, 12(12), 4099–4112.
+ doi:10.1007/s10530-010-9827-3
+\end_layout
+
+\begin_layout BeginPlainFrame
+Different Management Scenarios
+\end_layout
+
+\begin_layout Standard
+
+\lang british
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="6">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="middle" width="0.5in">
+<column alignment="center" valignment="middle" width="0.6in">
+<column alignment="center" valignment="middle" width="0.6in">
+<column alignment="center" valignment="middle" width="0.6in">
+<column alignment="center" valignment="middle" width="0.6in">
+<column alignment="center" valignment="middle" width="0.6in">
+<row>
+<cell alignment="center" valignment="top" bottomline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+Random
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+Consensus
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+Past
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+Present
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" bottomline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+Future
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+Agulhas
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Agulhas.Random.Agulhas_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Agulhas.Consensus.Agulhas_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Agulhas.Past.Agulhas_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Agulhas.Present.Agulhas_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Agulhas.Future.Agulhas_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+Cape Peninsula
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename CapePeninsula.Random.CapePeninsula_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename CapePeninsula.Consensus.CapePeninsula_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename CapePeninsula.Past.CapePeninsula_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename CapePeninsula.Present.CapePeninsula_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename CapePeninsula.Future.CapePeninsula_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+Outeni-qua
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Outeniqua.Random.Outeniqua_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Outeniqua.Consensus.Outeniqua_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Outeniqua.Past.Outeniqua_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Outeniqua.Present.Outeniqua_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\lang british
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Graphics
+	filename Outeniqua.Future.Outeniqua_new.pdf
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+How to make it accessible
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+usebackgroundtemplate{
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename presentation-cloud-computing_bkg.png
+	lyxscale 30
+	width 100page%
+	height 100pheight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginPlainFrame
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename presentation-cloud-computing_2.png
+	width 100text%
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size tiny
+© http://www.itresearch.fr/industrialisation-informatique/ edited by myself
+\end_layout
+
+\begin_layout BeginFrame
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+[plain,allowframebreaks]
+\end_layout
+
+\end_inset
+
+User Interface
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename gruber.jpg
+	width 100text%
+	height 100theight%
+	keepAspectRatio
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size tiny
+© http://uxmag.com/articles/the-dirtiest-word-in-ux-complexity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename blender.jpg
+	scale 65
+	BoundingBox 0bp 0bp 232bp 259bp
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://uxmag.com/articles/the-dirtiest-word-in-ux-complexity
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename blender.jpg
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\size tiny
+© http://uxmag.com/articles/the-dirtiest-word-in-ux-complexity
+\end_layout
+
+\begin_layout BeginFrame
+Where we are
+\end_layout
+
+\begin_layout Enumerate
+Developing generic spread model
+\end_layout
+
+\begin_layout Enumerate
+Parametrize spread model
+\end_layout
+
+\begin_layout Enumerate
+Identify ecosystem service models
+\end_layout
+
+\begin_layout Enumerate
+Develop simple interface
+\end_layout
+
+\begin_layout BeginPlainFrame
+Bringing Science and management together?
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename rosie_the_riveter.jpg
+	lyxscale 30
+	width 100page%
+	height 85pheight%
+	keepAspectRatio
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+Acknowledgements
+\end_layout
+
+\begin_layout Itemize
+This project is financed by Ezemvelo KZN Wildlife.
+\end_layout
+
+\begin_layout Itemize
+Conference attendance financed by the Centre of Excellence for Invasion
+ Biology, Stellenbosch University
+\end_layout
+
+\begin_layout Itemize
+Software used (OpenSource only)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Presentation: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+LyX 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.lyx.org
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+LaTeX 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://www.latex-project.org/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Beamer 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://bitbucket.org/rivanvx/beamer/wiki/Home
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Charts
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+PlantUML 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://http://plantuml.sourceforge.net
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+and others
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Contact info
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Preview
+
+\begin_layout Standard
+
+\lang british
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{pspicture}(4cm,4cm)
+\end_layout
+
+\begin_layout Plain Layout
+
+ 
+\backslash
+psbarcode{MECARD:N:Krug,Rainer M;TEL:+33685625998;EMAIL:Rainer@krugs.de;URL:http:
+//github.com/rkrug/INTECOL_2013_Optimizing;NOTE:Bringing Science to Management
+ --- using simulation- and scenario-based approaches to guide decision making
+ in invasive species management.
+ ;}{}{qrcode}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{pspicture}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rainer@krugs.de, http://github.com/rkrug/INTECOL_2013_Optimizing
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document
