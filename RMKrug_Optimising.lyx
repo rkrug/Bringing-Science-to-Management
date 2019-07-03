@@ -228,8 +228,16 @@ Contents
 \end_layout
 
 \begin_layout Standard
-\begin_inset CommandInset toc
-LatexCommand tableofcontents
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents[hideallsubsections]
+\end_layout
 
 \end_inset
 
@@ -1295,6 +1303,32 @@ status open
 
 \end_layout
 
+\begin_layout BeginFrame
+To sum up
+\end_layout
+
+\begin_layout AlertBlock
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Teaching the use of proprietary software to students and giving them cheap/free
+ licences for it is akin to handing out free drugs at school gates.
+ (Theo Pepler, SULUG mailing list)
+\end_layout
+
+\end_deeper
 \begin_layout AgainFrame
 <2>overview
 \end_layout
@@ -3150,16 +3184,7 @@ Bringing Science and management together?
 \end_layout
 
 \begin_layout BeginFrame
-Acknowledgements
-\end_layout
-
-\begin_layout Itemize
-This project is financed by Ezemvelo KZN Wildlife.
-\end_layout
-
-\begin_layout Itemize
-Conference attendance financed by the Centre of Excellence for Invasion
- Biology, Stellenbosch University
+Software Used in this Presentation
 \end_layout
 
 \begin_layout Itemize
